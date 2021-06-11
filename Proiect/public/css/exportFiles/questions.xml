@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.1.0
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Jun 09, 2021 at 09:40 AM
+- Server version: 10.4.18-MariaDB
+- PHP Version: 8.0.3
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="heromaze" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="questions">
+                CREATE TABLE `questions` (
+                  `id` int(11) NOT NULL,
+                  `character_id` varchar(45) DEFAULT NULL,
+                  `question` varchar(400) DEFAULT NULL,
+                  `A_answer` varchar(45) DEFAULT NULL,
+                  `B_answer` varchar(45) DEFAULT NULL,
+                  `C_answer` varchar(45) DEFAULT NULL,
+                  `correct_answer` varchar(45) DEFAULT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'heromaze'
+    -->
+    <database name="heromaze">
+        <!-- Table questions -->
+        <table name="questions">
+            <column name="id">1</column>
+            <column name="character_id">1</column>
+            <column name="question">Cum il cheama pe Aquaman in viata reala?</column>
+            <column name="A_answer">Bruce Wayne</column>
+            <column name="B_answer">Arthur Curry</column>
+            <column name="C_answer">Red Robin</column>
+            <column name="correct_answer">B</column>
+        </table>
+        <table name="questions">
+            <column name="id">2</column>
+            <column name="character_id">1</column>
+            <column name="question">In ce an s-a scufundat Titanicul?</column>
+            <column name="A_answer">1915</column>
+            <column name="B_answer">1904</column>
+            <column name="C_answer">1912</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">3</column>
+            <column name="character_id">1</column>
+            <column name="question">Ce metal a fost descoperit de Hans Christian Oersted în 1825?</column>
+            <column name="A_answer">aluminiu</column>
+            <column name="B_answer">plumb</column>
+            <column name="C_answer">zinc</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">4</column>
+            <column name="character_id">1</column>
+            <column name="question">Ce culoare au ochii lui Aquaman?</column>
+            <column name="A_answer">albastri</column>
+            <column name="B_answer">verzi</column>
+            <column name="C_answer">negri</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">5</column>
+            <column name="character_id">1</column>
+            <column name="question">Cate respirații are corpul uman zilnic?</column>
+            <column name="A_answer">15000</column>
+            <column name="B_answer">18000</column>
+            <column name="C_answer">20000</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">6</column>
+            <column name="character_id">1</column>
+            <column name="question">Care este durata de viață a unei libelule?</column>
+            <column name="A_answer">o saptamana</column>
+            <column name="B_answer">1 zi</column>
+            <column name="C_answer">10 zile</column>
+            <column name="correct_answer">B</column>
+        </table>
+        <table name="questions">
+            <column name="id">7</column>
+            <column name="character_id">1</column>
+            <column name="question">Ce culoare are parul lui Aquaman?</column>
+            <column name="A_answer">alb</column>
+            <column name="B_answer">bleumarin</column>
+            <column name="C_answer">blond</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">8</column>
+            <column name="character_id">1</column>
+            <column name="question"> În ce an a fost lansat pentru prima dată The Godfather?</column>
+            <column name="A_answer">1961</column>
+            <column name="B_answer">1972</column>
+            <column name="C_answer">1993</column>
+            <column name="correct_answer">B</column>
+        </table>
+        <table name="questions">
+            <column name="id">9</column>
+            <column name="character_id">1</column>
+            <column name="question">Care este cel mai înalt munte de pe Glob?</column>
+            <column name="A_answer">Himalaya</column>
+            <column name="B_answer">Omu</column>
+            <column name="C_answer">Everest</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">10</column>
+            <column name="character_id">1</column>
+            <column name="question">In ce an a aparut caracterul Aquaman?</column>
+            <column name="A_answer">1941</column>
+            <column name="B_answer">1939</column>
+            <column name="C_answer">1945</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">11</column>
+            <column name="character_id">2</column>
+            <column name="question">Ce culoare au ochii lui Batman?</column>
+            <column name="A_answer">negri</column>
+            <column name="B_answer">albastri</column>
+            <column name="C_answer">verzi</column>
+            <column name="correct_answer">B</column>
+        </table>
+        <table name="questions">
+            <column name="id">12</column>
+            <column name="character_id">2</column>
+            <column name="question">In ce an a avut loc Nașterea lui Buddha?</column>
+            <column name="A_answer">486 î.Hr</column>
+            <column name="B_answer"> 385 î.Hr</column>
+            <column name="C_answer">289 î.Hr</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">13</column>
+            <column name="character_id">2</column>
+            <column name="question">Ce culoare are parul lui Batman?</column>
+            <column name="A_answer">saten</column>
+            <column name="B_answer">bleumarin</column>
+            <column name="C_answer">negru</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">14</column>
+            <column name="character_id">2</column>
+            <column name="question">Dacă Pământul ar fi făcut într-o gaură neagră, care ar fi diametrul orizontului său de eveniment?</column>
+            <column name="A_answer">15mm</column>
+            <column name="B_answer">20mm</column>
+            <column name="C_answer">35mm</column>
+            <column name="correct_answer">B</column>
+        </table>
+        <table name="questions">
+            <column name="id">15</column>
+            <column name="character_id">2</column>
+            <column name="question">În 1930, Albert Einstein și un coleg au primit un brevet american 1781541. Pentru ce a fost?</column>
+            <column name="A_answer">aragaz</column>
+            <column name="B_answer">cuptor</column>
+            <column name="C_answer">frigider</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">16</column>
+            <column name="character_id">2</column>
+            <column name="question">Câte floarea-soarelui au existat în cea de-a treia versiune a lui Van Gogh din tabloul „Floarea-soarelui”?</column>
+            <column name="A_answer">12</column>
+            <column name="B_answer">5</column>
+            <column name="C_answer">17</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">17</column>
+            <column name="character_id">2</column>
+            <column name="question">In ce an a aparut caracterul Batman?</column>
+            <column name="A_answer">1941</column>
+            <column name="B_answer">1939</column>
+            <column name="C_answer">1945</column>
+            <column name="correct_answer">B</column>
+        </table>
+        <table name="questions">
+            <column name="id">18</column>
+            <column name="character_id">2</column>
+            <column name="question">Unde se afla Podul portului Sydney?</column>
+            <column name="A_answer">UK</column>
+            <column name="B_answer">SUA</column>
+            <column name="C_answer">Australia</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">19</column>
+            <column name="character_id">2</column>
+            <column name="question">In ce an a fost fondata prima universitate?</column>
+            <column name="A_answer">1088</column>
+            <column name="B_answer">977</column>
+            <column name="C_answer">1123</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">20</column>
+            <column name="character_id">2</column>
+            <column name="question">Care este identitatea secreta a lui Batman?</column>
+            <column name="A_answer">Bruce Wayne</column>
+            <column name="B_answer">Arthur Curry</column>
+            <column name="C_answer">Red Robin</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">21</column>
+            <column name="character_id">3</column>
+            <column name="question">Games of Thrones: Cum a murit copilul lui Cersi, Myrcella?</column>
+            <column name="A_answer">sufocat in somn</column>
+            <column name="B_answer">in razboi</column>
+            <column name="C_answer">otravit</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">22</column>
+            <column name="character_id">3</column>
+            <column name="question">Ce culoare au ochii lui Captain America?</column>
+            <column name="A_answer">albastri</column>
+            <column name="B_answer">verzi</column>
+            <column name="C_answer">negri</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">23</column>
+            <column name="character_id">3</column>
+            <column name="question">Ce artist a pictat „Iazul cu lac de apă” în 1899?</column>
+            <column name="A_answer">Rembrandt</column>
+            <column name="B_answer">Monet</column>
+            <column name="C_answer">Picasso</column>
+            <column name="correct_answer">B</column>
+        </table>
+        <table name="questions">
+            <column name="id">24</column>
+            <column name="character_id">3</column>
+            <column name="question">Cum il cheama pe Captain America in viata reala?</column>
+            <column name="A_answer">Peter Parker</column>
+            <column name="B_answer">Thor Odinson</column>
+            <column name="C_answer">Steven Rogers</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">25</column>
+            <column name="character_id">3</column>
+            <column name="question">In ce tara se afla  Colosseum?</column>
+            <column name="A_answer">Spania</column>
+            <column name="B_answer">Grecia</column>
+            <column name="C_answer">Italia</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">26</column>
+            <column name="character_id">3</column>
+            <column name="question">Ce culoare are parul lui Captain America?</column>
+            <column name="A_answer">negru</column>
+            <column name="B_answer">blond</column>
+            <column name="C_answer">alb</column>
+            <column name="correct_answer">B</column>
+        </table>
+        <table name="questions">
+            <column name="id">27</column>
+            <column name="character_id">3</column>
+            <column name="question">In ce an s-a născut William Shakespeare?</column>
+            <column name="A_answer">1564</column>
+            <column name="B_answer">1643</column>
+            <column name="C_answer">1489</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">28</column>
+            <column name="character_id">3</column>
+            <column name="question">Unde au fost produse primele animații computerizate?</column>
+            <column name="A_answer">Laboratorul Walt Disney </column>
+            <column name="B_answer">Laboratorul Rutherford Appleton</column>
+            <column name="C_answer">Laboratorul Karl Jacob</column>
+            <column name="correct_answer">B</column>
+        </table>
+        <table name="questions">
+            <column name="id">29</column>
+            <column name="character_id">3</column>
+            <column name="question">In ce an a aparut caracterul Captain America?</column>
+            <column name="A_answer">1945</column>
+            <column name="B_answer">1948</column>
+            <column name="C_answer">1950</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">30</column>
+            <column name="character_id">3</column>
+            <column name="question">Dacă ați putea procesa un miliard de atomi pe secundă, cât de mult timp ar fi nevoie pentru a teleporta o ființă umană tipică?</column>
+            <column name="A_answer">200 mld ani</column>
+            <column name="B_answer">150 mld ani</column>
+            <column name="C_answer">500 mld ani</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">31</column>
+            <column name="character_id">4</column>
+            <column name="question">Care este cel mai lung fluviu din Europa?</column>
+            <column name="A_answer">Dunarea</column>
+            <column name="B_answer">Volga</column>
+            <column name="C_answer">Nilul</column>
+            <column name="correct_answer">B</column>
+        </table>
+        <table name="questions">
+            <column name="id">32</column>
+            <column name="character_id">4</column>
+            <column name="question">Ce culoare au ochii lui Spriderman ?</column>
+            <column name="A_answer">negri</column>
+            <column name="B_answer">albastri</column>
+            <column name="C_answer">caprui</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">33</column>
+            <column name="character_id">4</column>
+            <column name="question">In ce tara se afla Taj Mahal?</column>
+            <column name="A_answer">India</column>
+            <column name="B_answer">China</column>
+            <column name="C_answer">Iran</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">34</column>
+            <column name="character_id">4</column>
+            <column name="question">In ce an Martin Luther lansează Reforma?</column>
+            <column name="A_answer">1517</column>
+            <column name="B_answer">1523</column>
+            <column name="C_answer">1498</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">35</column>
+            <column name="character_id">4</column>
+            <column name="question">Ce culoare are parul lui Spriderman ?</column>
+            <column name="A_answer">negru</column>
+            <column name="B_answer">blond</column>
+            <column name="C_answer">saten</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">36</column>
+            <column name="character_id">4</column>
+            <column name="question">Care cântăreț era cunoscut printre altele sub numele de „Regele popului” și „The Gloved One”?</column>
+            <column name="A_answer">Elvis Presley</column>
+            <column name="B_answer">Michael Jackson</column>
+            <column name="C_answer">Billy Joe</column>
+            <column name="correct_answer">B</column>
+        </table>
+        <table name="questions">
+            <column name="id">37</column>
+            <column name="character_id">4</column>
+            <column name="question">În ce an Beatles a plecat prima dată în SUA?</column>
+            <column name="A_answer">1959</column>
+            <column name="B_answer">1964</column>
+            <column name="C_answer">1989</column>
+            <column name="correct_answer">B</column>
+        </table>
+        <table name="questions">
+            <column name="id">38</column>
+            <column name="character_id">4</column>
+            <column name="question">In ce an a aparut caracterul Spriderman ?</column>
+            <column name="A_answer">1959</column>
+            <column name="B_answer">1961</column>
+            <column name="C_answer">1962</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">39</column>
+            <column name="character_id">4</column>
+            <column name="question">Care este temperatura medie a suprafeței pe Venus?</column>
+            <column name="A_answer">460 ° C</column>
+            <column name="B_answer">60 ° C</column>
+            <column name="C_answer">20000 ° C</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">40</column>
+            <column name="character_id">4</column>
+            <column name="question">Care este identitatea secreta a lui Spiderman?</column>
+            <column name="A_answer">Peter Parker</column>
+            <column name="B_answer">James Howlett</column>
+            <column name="C_answer">Bruce Wayne</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">41</column>
+            <column name="character_id">5</column>
+            <column name="question">In ce an a avut loc Sfârșitul Primului Război Mondial?</column>
+            <column name="A_answer">1916</column>
+            <column name="B_answer">1923</column>
+            <column name="C_answer">1918</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">42</column>
+            <column name="character_id">5</column>
+            <column name="question">Ce culoare au ochii lui Superman?</column>
+            <column name="A_answer">albastri</column>
+            <column name="B_answer">verzi</column>
+            <column name="C_answer">negri</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">43</column>
+            <column name="character_id">5</column>
+            <column name="question">Unde se afla Monumentul Azadi?</column>
+            <column name="A_answer">Irak</column>
+            <column name="B_answer">Iran</column>
+            <column name="C_answer">Iordania</column>
+            <column name="correct_answer">B</column>
+        </table>
+        <table name="questions">
+            <column name="id">44</column>
+            <column name="character_id">5</column>
+            <column name="question">Ce culoare are parul lui Superman?</column>
+            <column name="A_answer">negru</column>
+            <column name="B_answer">albastru</column>
+            <column name="C_answer">saten</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">45</column>
+            <column name="character_id">5</column>
+            <column name="question">In ce tara se afla Juche Tower?</column>
+            <column name="A_answer">China</column>
+            <column name="B_answer">Japonia</column>
+            <column name="C_answer">Coreea</column>
+            <column name="correct_answer">B</column>
+        </table>
+        <table name="questions">
+            <column name="id">46</column>
+            <column name="character_id">5</column>
+            <column name="question">Unde în lume este expusă Mona Lisa a lui Leonardo da Vinci?</column>
+            <column name="A_answer">Londra</column>
+            <column name="B_answer">Berlin</column>
+            <column name="C_answer">Paris</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">47</column>
+            <column name="character_id">5</column>
+            <column name="question">In ce an a aparut caracterul Superman?</column>
+            <column name="A_answer">1985</column>
+            <column name="B_answer">1984</column>
+            <column name="C_answer">1986</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">48</column>
+            <column name="character_id">5</column>
+            <column name="question">Ce vedetă pop americană a avut succes în topul din 2015 cu single-urile „Sorry” și „Love Yourself”?</column>
+            <column name="A_answer">Beyonce</column>
+            <column name="B_answer">Justin Bieber</column>
+            <column name="C_answer">Bruno Mars</column>
+            <column name="correct_answer">B</column>
+        </table>
+        <table name="questions">
+            <column name="id">49</column>
+            <column name="character_id">5</column>
+            <column name="question">Ce club a câștigat finala Cupei FA din 1986?</column>
+            <column name="A_answer">Liverpool </column>
+            <column name="B_answer">Manchester</column>
+            <column name="C_answer">FC Barcelona</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">50</column>
+            <column name="character_id">5</column>
+            <column name="question">Care este identitatea secreta a lui Superman?</column>
+            <column name="A_answer">Clark Kent</column>
+            <column name="B_answer">Red Robin</column>
+            <column name="C_answer">Thor Odinson</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">51</column>
+            <column name="character_id">6</column>
+            <column name="question">Câte continente există pe Pământ?</column>
+            <column name="A_answer">7</column>
+            <column name="B_answer">6</column>
+            <column name="C_answer">5</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">52</column>
+            <column name="character_id">6</column>
+            <column name="question">Ce culoare au ochii lui Thor?</column>
+            <column name="A_answer">verzi</column>
+            <column name="B_answer">albastri</column>
+            <column name="C_answer">negri</column>
+            <column name="correct_answer">B</column>
+        </table>
+        <table name="questions">
+            <column name="id">53</column>
+            <column name="character_id">6</column>
+            <column name="question">Games of Thrones: Daenerys are 3 dragoni. Care dintre urmatoarele nume nu este al unuia dintre ei?</column>
+            <column name="A_answer">Viserion</column>
+            <column name="B_answer">Rhaegal</column>
+            <column name="C_answer">Draco</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">54</column>
+            <column name="character_id">6</column>
+            <column name="question">In ce an a avut loc Sfârșitul celui de-al doilea război mondial?</column>
+            <column name="A_answer">1942</column>
+            <column name="B_answer">1945</column>
+            <column name="C_answer">1948</column>
+            <column name="correct_answer">B</column>
+        </table>
+        <table name="questions">
+            <column name="id">55</column>
+            <column name="character_id">6</column>
+            <column name="question">Ce culoare are parul lui  Thor?</column>
+            <column name="A_answer">blond</column>
+            <column name="B_answer">negru</column>
+            <column name="C_answer">alb</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">56</column>
+            <column name="character_id">6</column>
+            <column name="question">In ce an a fost inființată China comunistă?</column>
+            <column name="A_answer">1949</column>
+            <column name="B_answer">1951</column>
+            <column name="C_answer">1956</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">57</column>
+            <column name="character_id">6</column>
+            <column name="question">Unde se afla Statuia Libertăţii?</column>
+            <column name="A_answer">Canada</column>
+            <column name="B_answer">UK</column>
+            <column name="C_answer">SUA</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">58</column>
+            <column name="character_id">6</column>
+            <column name="question">In ce an a aparut caracterul Thor?</column>
+            <column name="A_answer">1940</column>
+            <column name="B_answer">1941</column>
+            <column name="C_answer">1948</column>
+            <column name="correct_answer">B</column>
+        </table>
+        <table name="questions">
+            <column name="id">59</column>
+            <column name="character_id">6</column>
+            <column name="question">In ce tara se afla  Piramida Giza și Sfinxul Mare?</column>
+            <column name="A_answer">Egipt</column>
+            <column name="B_answer">Iordania</column>
+            <column name="C_answer">Arabia Saudita</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">60</column>
+            <column name="character_id">6</column>
+            <column name="question">Care este numele complet a lui Thor?</column>
+            <column name="A_answer">Thor Parker</column>
+            <column name="B_answer">Thor Jacob</column>
+            <column name="C_answer">Thor Odinson</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">61</column>
+            <column name="character_id">7</column>
+            <column name="question">Câți ani avea Michael când a murit în 2009?</column>
+            <column name="A_answer">50</column>
+            <column name="B_answer">49</column>
+            <column name="C_answer">59</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">62</column>
+            <column name="character_id">7</column>
+            <column name="question">Ce culoare au ochii lui Timothy Drake?</column>
+            <column name="A_answer">negri</column>
+            <column name="B_answer">verzi</column>
+            <column name="C_answer">albastri</column>
+            <column name="correct_answer">B</column>
+        </table>
+        <table name="questions">
+            <column name="id">63</column>
+            <column name="character_id">7</column>
+            <column name="question">Ce film Bond a fost lansat în 2006?</column>
+            <column name="A_answer">Moonraker</column>
+            <column name="B_answer">Casino Royale</column>
+            <column name="C_answer">Live and Let Die</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">64</column>
+            <column name="character_id">7</column>
+            <column name="question">Care este cel mai estic oraș al României?</column>
+            <column name="A_answer">Iasi</column>
+            <column name="B_answer">Constanta</column>
+            <column name="C_answer">Sulina</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">65</column>
+            <column name="character_id">7</column>
+            <column name="question">Ce culoare are parul lui Timothy Drake?</column>
+            <column name="A_answer">alb</column>
+            <column name="B_answer">negru</column>
+            <column name="C_answer">gri</column>
+            <column name="correct_answer">B</column>
+        </table>
+        <table name="questions">
+            <column name="id">66</column>
+            <column name="character_id">7</column>
+            <column name="question"> În ce țară s-a născut Adolf Hitler?</column>
+            <column name="A_answer">Austria</column>
+            <column name="B_answer">Germania</column>
+            <column name="C_answer">Olanda</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">67</column>
+            <column name="character_id">7</column>
+            <column name="question">În ce oraș au fost executați soții Ceaușescu?</column>
+            <column name="A_answer">Iasi</column>
+            <column name="B_answer">Targiviste</column>
+            <column name="C_answer">Slatina</column>
+            <column name="correct_answer">B</column>
+        </table>
+        <table name="questions">
+            <column name="id">68</column>
+            <column name="character_id">7</column>
+            <column name="question">In ce an a aparut caracterul Timothy Drake?</column>
+            <column name="A_answer">1941</column>
+            <column name="B_answer">1965</column>
+            <column name="C_answer">1989</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">69</column>
+            <column name="character_id">7</column>
+            <column name="question">Ce naționalitate are Papa Francisc I?</column>
+            <column name="A_answer">argentiniana</column>
+            <column name="B_answer">spaniola</column>
+            <column name="C_answer">italiana</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">70</column>
+            <column name="character_id">7</column>
+            <column name="question">Ce porecla are Tim Drake?</column>
+            <column name="A_answer">Red Robin</column>
+            <column name="B_answer">Robin Hood</column>
+            <column name="C_answer">Robin Robbe</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">71</column>
+            <column name="character_id">8</column>
+            <column name="question">Game of Thrones:  Cine a fost responsabil pentru crearea regelui de noapte?</column>
+            <column name="A_answer">copiii Padurii</column>
+            <column name="B_answer">familia Stark</column>
+            <column name="C_answer">dragonii</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">72</column>
+            <column name="character_id">8</column>
+            <column name="question">Ce culoare au ochii lui Wolverine?</column>
+            <column name="A_answer">verzi</column>
+            <column name="B_answer">albastri</column>
+            <column name="C_answer">negri</column>
+            <column name="correct_answer">B</column>
+        </table>
+        <table name="questions">
+            <column name="id">73</column>
+            <column name="character_id">8</column>
+            <column name="question">Care actor a fost James Bond înaintea lui Daniel Craig, realizând patru filme ca 007?</column>
+            <column name="A_answer">George Lazenby</column>
+            <column name="B_answer">Richard Kiel</column>
+            <column name="C_answer">Pierce Brosnan</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">74</column>
+            <column name="character_id">8</column>
+            <column name="question">Cum se numea autobiografia lui Michael, lansată în 1988?</column>
+            <column name="A_answer">King of Pop</column>
+            <column name="B_answer">Moonwalk</column>
+            <column name="C_answer">The Legend</column>
+            <column name="correct_answer">B</column>
+        </table>
+        <table name="questions">
+            <column name="id">75</column>
+            <column name="character_id">8</column>
+            <column name="question">Ce culoare are parul lui Wolverine?</column>
+            <column name="A_answer">negru</column>
+            <column name="B_answer">gri</column>
+            <column name="C_answer">saten</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">76</column>
+            <column name="character_id">8</column>
+            <column name="question">Ce țară din America de Sud are cea mai mare suprafață?</column>
+            <column name="A_answer">Canada</column>
+            <column name="B_answer">Mexic</column>
+            <column name="C_answer">Brazilia</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">77</column>
+            <column name="character_id">8</column>
+            <column name="question">Care este capitala Islandiei?</column>
+            <column name="A_answer">Oslo</column>
+            <column name="B_answer">Copenhaga</column>
+            <column name="C_answer">Reykjavik</column>
+            <column name="correct_answer">C</column>
+        </table>
+        <table name="questions">
+            <column name="id">78</column>
+            <column name="character_id">8</column>
+            <column name="question">In ce an a aparut caracterul Wolverine?</column>
+            <column name="A_answer">1939</column>
+            <column name="B_answer">1974</column>
+            <column name="C_answer">1993</column>
+            <column name="correct_answer">B</column>
+        </table>
+        <table name="questions">
+            <column name="id">79</column>
+            <column name="character_id">8</column>
+            <column name="question">Câte state are Statele Unite ale Americii?</column>
+            <column name="A_answer">50</column>
+            <column name="B_answer">48</column>
+            <column name="C_answer">51</column>
+            <column name="correct_answer">A</column>
+        </table>
+        <table name="questions">
+            <column name="id">80</column>
+            <column name="character_id">8</column>
+            <column name="question">Cum il cheama pe Wolverine in viata reala?</column>
+            <column name="A_answer">Arthur Curry</column>
+            <column name="B_answer">James Howlett</column>
+            <column name="C_answer">Bruce Wayne</column>
+            <column name="correct_answer">B</column>
+        </table>
+    </database>
+</pma_xml_export>

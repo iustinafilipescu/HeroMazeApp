@@ -1,0 +1,305 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+.clearfix:after,
+.clearfix:before {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+  display: block;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-image: url("media/map2.jpg");
+}
+
+.login-wrap {
+  height: 80vh;
+  width: 60vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.login-html {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 20% 15% 10% 15%;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+.login-html .sign-in-htm,
+.login-html .sign-up-htm {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transition: all 0.4s linear;
+}
+
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check {
+  display: none;
+}
+
+.login-html .tab {
+  font-size: 2vw;
+  color: rgb(130, 223, 244);
+  margin: 0 5% 5% 0;
+  display: inline-block;
+}
+
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab {
+  color: rgb(130, 223, 244);
+  border-bottom: 2px solid rgb(130, 223, 244);
+}
+
+.login-form {
+  position: relative;
+}
+
+.login-form .group {
+  margin-bottom: 5%;
+}
+
+.login-form .group .input {
+  padding: 5%;
+  margin: 5% 0;
+  border-radius: 4px;
+  border-bottom: 2px solid rgb(130, 223, 244);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  box-sizing: border-box;
+  background: none;
+}
+
+.login-form .group .input,
+.login-form .group .button {
+  width: 100%;
+  color: #fff;
+  display: block;
+  outline: none;
+}
+
+.login-form .group .button {
+  margin-top: 5%;
+  padding: 5% 10%;
+  font-size: 1vw;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  background: rgb(130, 223, 244);
+}
+
+#user::placeholder,
+#pass::placeholder,#lastreg::placeholder,#firstreg::placeholder,#userreg::placeholder,#passreg::placeholder,#passcreg::placeholder {
+  color: white;
+  opacity: 0.8;
+  font-size: 1vw;
+}
+
+.login-form .group label .icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 3%;
+  border-radius: 2px;
+  position: relative;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.login-form .group label .icon:before,
+.login-form .group label .icon:after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.login-form .group label .icon:before {
+  left: 3px;
+  width: 5px;
+  bottom: 6px;
+  transform: scale(0) rotate(0);
+}
+
+.login-form .group label .icon:after {
+  top: 6px;
+  right: 0;
+  transform: scale(0) rotate(0);
+}
+.login-form .group label {
+  color: #fff;
+  font-size: 1vw;
+}
+.login-form .group .check:checked + label {
+  color: #fff;
+  font-size: 1vw;
+}
+.login-form .group .check:checked + label .icon {
+  background: rgb(130, 223, 244);
+}
+.login-form .group .check:checked + label .icon:before {
+  transform: scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after {
+  transform: scale(1) rotate(-45deg);
+}
+.login-html
+  .sign-in:checked
+  + .tab
+  + .sign-up
+  + .tab
+  + .login-form
+  .sign-in-htm {
+  transform: rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm {
+  transform: rotate(0);
+}
+
+#user {
+  background-image: url("media/user-icon.png");
+  position: left;
+  padding-left: 11%;
+  padding-bottom: 0;
+  background-size: 10%;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+#firstreg{
+  background-image: url("media/user-icon.png");
+  position: left;
+  padding-left: 11%;
+  padding-bottom: 0;
+  background-size: 10%;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+
+}
+#lastreg{
+  background-image: url("media/user-icon.png");
+  position: left;
+  padding-left: 11%;
+  padding-bottom: 0;
+  background-size: 10%;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+
+}
+#userreg{
+  background-image: url("media/user-icon.png");
+  position: left;
+  padding-left: 11%;
+  padding-bottom: 0;
+  background-size: 10%;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+
+}
+
+#pass {
+  background-image: url("media/password-icon.png");
+  position: left;
+  padding-left: 11%;
+  padding-bottom: 0;
+  background-size: 10%;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+#passreg{
+  background-image: url("media/password-icon.png");
+  position: left;
+  padding-left: 11%;
+  padding-bottom: 0;
+  background-size: 10%;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+
+}
+#passcreg{
+  background-image: url("media/password-icon.png");
+  position: left;
+  padding-left: 11%;
+  padding-bottom: 0;
+  background-size: 10%;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+
+}
+
+.wrongClass {
+  visibility: hidden;
+  color: red;
+}
+
+.form-pop-up {
+  width: 60vh;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+}
+
+.form-container {
+  height: 100%;
+  width: 100%;
+	padding: 5% 5% 5% 5%;
+  margin-top: 60%;
+  border-radius: 10px;
+	font-size: 1vw;
+	background-color: rgba(130, 223, 244,1);
+	position: relative;
+}
+
+.instructions {
+	color: black;
+	font-weight: bold;
+}
+
+.closeButton {
+  float: right;
+  background-color: black;
+  border-radius: 100%;
+  border: none;
+  font-size: 2vh;
+  cursor: pointer;
+  color: #82dff4;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.closeButton:hover {
+  background-color: rgb(255, 0, 0);
+  border-radius: 100%;
+  border: none;
+  font-size: 3vh;
+  cursor: pointer;
+  color: #82dff4;
+  opacity: 0.8;
+  transition: 0.3s;
+}

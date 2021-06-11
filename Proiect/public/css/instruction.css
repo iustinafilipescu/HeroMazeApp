@@ -1,0 +1,105 @@
+body {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  background-image: url("media/map2.jpg");
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: " Meniu Center Center Center Center Center";
+  height: 100%;
+}
+
+.Meniu {
+  grid-area: Meniu;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10%;
+  text-align: center;
+}
+
+.Center {
+  grid-area: Center;
+  background-color: rgba(0, 179, 255, 0.25);
+  padding: 3%;
+}
+
+.button {
+  margin-top: 3%;
+  border-radius: 12px;
+  background-color: #000000;
+  border: none;
+  text-decoration: none;
+  font-size: 1vw;
+  cursor: pointer;
+  color: #82dff4;
+  opacity: 0.8;
+  transition: 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 6vh;
+  margin-bottom: 5vh;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #008cba;
+  color: white;
+  opacity: 1;
+}
+
+.logo {
+  width: 10vw;
+}
+
+.limba {
+  width: 1vw;
+  height: 1vw;
+  cursor: pointer;
+  margin-right: 10%;
+  padding-left: 5%;
+  margin-top: 2vh;
+}
+
+.language {
+  margin-top: 10%;
+  font-size: 1vw;
+  margin-left: 30%;
+  padding-top: 5%;
+  padding-bottom: 6%;
+  width: 45%;
+  background-color: black;
+  color: #82dff4;
+  border-radius: 12px;
+  transition: 0.3s;
+  text-align: center;
+  opacity: 0.8;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 7vh;
+  margin-bottom: 7vh;
+}
+
+.instructiuni {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  font-size: 1.3vw;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  transition: 0.3s;
+  text-align: justify;
+  padding: 2% 8%;
+  opacity: 0.8;
+  transition: 0.3s;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.train-link {
+  text-decoration-color: white;
+  color: white;
+}

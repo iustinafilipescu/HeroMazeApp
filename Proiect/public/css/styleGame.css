@@ -1,0 +1,345 @@
+html,
+body {
+  margin: 0px;
+  position:fixed;
+}
+
+body {
+  height: 725px;
+}
+
+.grid-container {
+  color: white;
+  display: grid;
+  background-image: url("media/map2.jpg");
+  height: 100vh;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.map {
+  grid-area: 1 / 3 / 6 / 7;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.question1 {
+  grid-area: 6 / 3 / 6 / 7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gameInfo {
+  grid-area: 1 / 1 / 3 / 3;
+  padding-bottom: 30px;
+}
+
+.div5 {
+  grid-area: 1 / 1 / 7 / 6;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hero {
+  grid-area: 3 / 1 / 6 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroImg {
+  padding-top: 50px;
+  width: 70%;
+}
+
+.imgMap {
+  border-radius: 25px;
+
+  height: 100%;
+}
+
+.button {
+  border-radius: 12px;
+  border: none;
+  background-color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  width: 200px;
+  color: #82dff4;
+  opacity: 0.8;
+  transition: 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button:hover {
+  background-color: #008cba;
+  color: white;
+  opacity: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  border: none;
+}
+
+/* Add a red background color to the cancel button */
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-containerCenter {
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.884);
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  margin-top: 5%;
+  border-radius: 25px;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . . .  . ."
+    ". question question question question question ."
+    ". question question question question question ."
+    ". question question question question question ."
+    ". . . . . . ."
+    ". A A A A A ."
+    ". B B B B B ."
+    ". C C C C C ."
+    " . . submit submit submit  . .  ";
+}
+
+.submit {
+  grid-area: 9 / 3 / 9 / 6;
+  background-color: rgba(54, 54, 54, 0.897);
+  margin: 10px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  cursor: pointer;
+  color: #82dff4;
+  opacity: 0.8;
+  transition: 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.submit:hover {
+  grid-area: 9 / 3 / 9 / 6;
+  background-color: rgba(99, 99, 99, 0.897);
+  margin: 10px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  cursor: pointer;
+  color: #82dff4;
+  opacity: 0.8;
+  transition: 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.closeButton {
+  grid-area: 1 / 7 / 1 / 7;
+  margin-right: 10px;
+  background-color: rgba(255, 0, 0, 0.562);
+  border-radius: 100%;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  cursor: pointer;
+  color: #82dff4;
+  opacity: 0.8;
+  transition: 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.closeButton:hover {
+  grid-area: 1 / 7 / 1 / 7;
+  margin-right: 10px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 100%;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  cursor: pointer;
+  color: #82dff4;
+  opacity: 0.8;
+  transition: 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.question {
+  width: 100%;
+  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  grid-area: question;
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: white;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 20px;
+}
+.A {
+  padding: 10px;
+
+  grid-area: A;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: aliceblue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: white;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+.A:hover {
+  grid-area: A;
+  background-color: rgba(30, 238, 238, 0.842);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: thin;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+.B {
+  grid-area: B;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: aliceblue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: white;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 20px;
+  margin: 5px;
+}
+.B:hover {
+  grid-area: B;
+  background-color: rgba(30, 238, 238, 0.842);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: thin;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+.C {
+  grid-area: C;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: aliceblue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: white;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 20px;
+  margin: 5px;
+}
+.C:hover {
+  grid-area: C;
+  background-color: rgba(30, 238, 238, 0.842);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: thin;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+.gameInfoGrid {
+  display: grid;
+  grid-template-columns: (2, 1fr);
+  grid-template-rows: repeat(2, repeat 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.points {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5vw;
+}
+.lives {
+  grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5vw;
+}
+.level {
+  grid-area: 2 / 1 / 3 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5vw;
+}
+.superhero {
+  grid-area: 2 / 2 / 3 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5vw;
+}

@@ -1,0 +1,246 @@
+body {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+}
+
+.grid-containerPage {
+  display: grid;
+  background-image: url("media/map2.jpg");
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: " Meniu Center Center Center Center Center";
+  height: 100%;
+}
+
+.Meniu {
+  grid-area: Meniu;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10%;
+  text-align: center;
+}
+
+.Center {
+  grid-area: Center;
+  background-color: rgba(0, 179, 255, 0.25);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.button {
+  margin-top: 3%;
+  border-radius: 12px;
+  background-color: #000000;
+  border: none;
+  text-decoration: none;
+  font-size: 1vw;
+  cursor: pointer;
+  color: #82dff4;
+  opacity: 0.8;
+  transition: 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 6vh;
+  margin-bottom: 5vh;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #008cba;
+  color: white;
+  opacity: 1;
+}
+
+.logo {
+  width: 10vw;
+}
+
+.limba {
+  width: 1vw;
+  height: 1vw;
+  cursor: pointer;
+  margin-right: 10%;
+  padding-left: 5%;
+  margin-top: 2vh;
+}
+
+.language {
+  margin-top: 10%;
+  font-size: 1vw;
+  margin-left: 30%;
+  padding-top: 5%;
+  padding-bottom: 6%;
+  width: 45%;
+  background-color: black;
+  color: #82dff4;
+  border-radius: 12px;
+  transition: 0.3s;
+  text-align: center;
+  opacity: 0.8;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 7vh;
+  margin-bottom: 7vh;
+}
+
+.grid-containerCenter {
+  background-color: rgba(0, 0, 0, 0.65);
+  height: 80%;
+  width: 80%;
+  margin: auto;
+  display: grid;
+  margin-top: 5%;
+  border-radius: 25px;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . . .  . ."
+    ". question question question question question ."
+    ". question question question question question ."
+    ". question question question question question ."
+    ". . . . . . ."
+    ". A A A A A ."
+    ". B B B B B ."
+    ". C C C C C ."
+    "    . .  leftarrow .  rightarrow . .  ";
+}
+.question {
+  grid-area: question;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: aliceblue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: white;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 20px;
+}
+.A {
+  grid-area: A;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: aliceblue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: white;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+.A:hover {
+  grid-area: A;
+  background-color: rgba(30, 238, 238, 0.842);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: thin;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+.B {
+  grid-area: B;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: aliceblue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: white;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 20px;
+  margin: 5px;
+}
+.B:hover {
+  grid-area: B;
+  background-color: rgba(30, 238, 238, 0.842);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: thin;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+.C {
+  grid-area: C;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: aliceblue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: white;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 20px;
+  margin: 5px;
+}
+.C:hover {
+  grid-area: C;
+  background-color: rgba(30, 238, 238, 0.842);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: thin;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+.leftarrow {
+  grid-area: leftarrow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.left {
+  padding: 5% 10%;
+  font-size: 1vw;
+  width: 15vh;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  background: rgb(130, 223, 244);
+}
+
+.right {
+  padding: 5% 10%;
+  font-size: 1vw;
+  width: 15vh;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  background: rgb(130, 223, 244);
+}
+
+.rightarrow {
+  grid-area: rightarrow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
